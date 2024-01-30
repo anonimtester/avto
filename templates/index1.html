@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Home Page</title>
+</head>
+<body>
+
+    <h1>Home</h1>
+
+    <a class="p-2 text-dark" href="admin">admin</a>
+
+
+        <h1>Header: {{ header }}</h1>
+
+        <h1>Subtitle: {{ subtitle }}</h1>
+
+        <h1>About: {{ about }}</h1>
+        
+
+        <h3>Название организации: {{ header }} </h3>
+        <h3>ИНН: {{ inn }}</h3>
+        <h3>КПП: {{ kpp }}</h3>
+        <h3>ОГРН: {{ ogrn }}</h3>
+        <h3>БИК: {{ bik }}</h3>
+        <h3>КС: {{ ks }}</h3>
+        <h3>РС: {{ pc }}</h3>
+        <h3>Адрес: {{ address }}</h3>
+<br>
+
+<div class="container mt-5">
+    <h1>Все услуги</h1>
+    {% for el in articles %}
+        <div class="alert alert-info">
+            {{ el.text }}
+        </div>
+    {% endfor %}
+</div>
+
+
+
+    
+</body>
+</html>

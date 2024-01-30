@@ -1,0 +1,11 @@
+@media(max-width: 768px) {
+	.header img{
+		margin-top: 0;
+		margin-left: 20px;
+	}
+
+	.header a{
+		display: inline;
+		font-size: 15px;
+	}
+}

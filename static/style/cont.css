@@ -1,0 +1,68 @@
+.cont {
+    margin-top: 20px;
+    width: 100%;
+    height: 320px;
+    /* border: 1px solid white; */
+    display: flex;
+    align-items: center;
+    overflow-x: auto; /* Добавляем прокручивание по горизонтали */
+    /* white-space: nowrap;  */
+}
+  
+.cont .services_block {
+    margin-right: 10px; 
+    width: 250px;
+    height: 280px;
+    /* border: 1px solid wheat; */
+    display: inline-block; 
+    flex-shrink: 0; 
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.services_block{
+    background-color: black;
+    overflow: hidden;
+    opacity: 0.7;
+
+}
+
+.services_block .services_title{
+    color: white;
+    margin: 5px;
+    text-align: center;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.services_descript{
+    color: wheat;
+    margin: 8px;
+    font-size: 24px;
+}
+
+
+.contact_button {
+    align-self: center;
+    margin: 10px;
+    color: blanchedalmond;
+    text-decoration: none;
+    transition: 0.8s;
+}
+
+.contact_button:hover{
+    color: white;
+    font-size: 18px;
+}
+
+
+
+@media(min-width: 768px){
+    .cont .services_block{
+        margin:  auto;
+        align-items: center;
+    }
+}

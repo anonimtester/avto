@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <title>Admin</title>
+</head>
+<body>
+
+
+    <h1>Admin</h1>
+    <a class="p-2 text-dark" href="index">home</a>
+    <a class="p-2 text-dark" href="create-article">Добавить Услугу</a>
+    <a class="p-2 text-dark" href="posts">Все услуги</a>
+
+
+    <form class="form-control" action="/update_header" method="post">
+        <p>Заголовок</p>
+        <input type="text" name="header" placeholder="{{ header }}">
+        <input type="submit" value="Заменить Заголовок">
+      </form>
+
+    <form class="form-control" action="/update_header" method="post">
+        <label for="header">New Header:</label><br>
+        <input type="text" id="header" name="header">
+        <input type="submit" value="Заменить Заголовок">
+    </form>
+
+    <br>
+
+    <form class="form-control" action="/update_subtitle" method="post">
+        <p>Подзаголовок</p>
+        <input type="text" name="subtitle" placeholder="{{ subtitle }}">
+        <input type="submit" value="Заменить Подзаголовок">
+      </form>
+
+    <form class="form-control" action="/update_subtitle" method="post">
+        <label for="subtitle">New Subtitle:</label><br>
+        <input type="text" id="subtitle" name="Заменить Подзаголовок">
+        <input type="submit" value="Заменить Подзаголовок">
+    </form>
+
+
+    <br>
+
+    <form class="form-control" action="/update_about" method="post">
+        <p>Описание блока "О нас"</p>
+        <input type="text" name="about" placeholder="{{ about }}">
+        <input type="submit" value="Заменить About">
+      </form>
+
+    <form class="form-control" action="/update_about" method="post">
+        <label for="about">New About:</label><br>
+        <input type="text" id="about" name="about">
+        <input type="submit" value="Заменить About">
+    </form>
+
+    <br>
+
+    <form class="form-control" action="/update_inn" method="post">
+        <p>Реквизиты: ИНН организации</p>
+        <input type="text" name="inn" placeholder="{{ inn }}">
+        <input type="submit" value="Заменить ИНН">
+      </form>
+
+    <form class="form-control" action="/update_inn" method="post">
+        <label for="inn">ИНН организации:</label><br>
+        <input type="text" id="inn" name="inn">
+        <input type="submit" value="Заменить ИНН">
+    </form>
+
+    <form class="form-control" action="/update_kpp" method="post">
+        <p>Реквизиты: КПП организации</p>
+        <input type="text" name="kpp" placeholder="{{ kpp }}">
+        <input type="submit" value="Заменить КПП">
+      </form>
+
+    <form class="form-control" action="/update_kpp" method="post">
+        <label for="kpp">КПП организации:</label><br>
+        <input type="text" id="kpp" name="kpp">
+        <input type="submit" value="Заменить КПП">
+    </form>
+
+    <form class="form-control" action="/update_ogrn" method="post">
+        <p>Реквизиты: ОГРН организации</p>
+        <input type="text" name="ogrn" placeholder="{{ ogrn }}">
+        <input type="submit" value="Заменить ОГРН">
+      </form>
+
+    <form class="form-control" action="/update_ogrn" method="post">
+        <label for="ogrn">ОГРН организации:</label><br>
+        <input type="text" id="ogrn" name="ogrn">
+        <input type="submit" value="Заменить ОГРН">
+    </form>
+
+    <form class="form-control" action="/update_bik" method="post">
+        <p>Реквизиты: БИК организации</p>
+        <input type="text" name="bik" placeholder="{{ bik }}">
+        <input type="submit" value="Заменить БИК">
+      </form>
+
+    <form class="form-control" action="/update_bik" method="post">
+        <label for="bik">БИК организации:</label><br>
+        <input type="text" id="bik" name="bik">
+        <input type="submit" value="Заменить БИК">
+    </form>
+
+    <form class="form-control" action="/update_ks" method="post">
+        <p>Реквизиты: КС организации</p>
+        <input type="text" name="ks" placeholder="{{ ks }}">
+        <input type="submit" value="Заменить КС">
+      </form>
+
+    <form class="form-control" action="/update_ks" method="post">
+        <label for="ks">КС организации:</label><br>
+        <input type="text" id="ks" name="ks">
+        <input type="submit" value="Заменить КС">
+    </form>
+
+    <form class="form-control" action="/update_pc" method="post">
+        <p>Реквизиты: РС организации</p>
+        <input type="text" name="pc" placeholder="{{ pc }}">
+        <input type="submit" value="Заменить РС">
+      </form>
+
+    <form class="form-control" action="/update_pc" method="post">
+        <label for="ks">РС организации:</label><br>
+        <input type="text" id="pc" name="pc">
+        <input type="submit" value="Заменить РС">
+    </form>
+
+    <form class="form-control" action="/update_address" method="post">
+        <p>Реквизиты: Адрес организации</p>
+        <input type="text" name="address" placeholder="{{ address }}">
+        <input type="submit" value="Заменить РС">
+      </form>
+
+    <form class="form-control" action="/update_address" method="post">
+        <label for="ks">Адрес организации:</label><br>
+        <input type="text" id="address" name="address">
+        <input type="submit" value="Заменить Адрес">
+    </form>
+
+    <br>
+
+
+</body>
+</html>

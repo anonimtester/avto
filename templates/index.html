@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style/main.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style/adapt.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style/header.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style/cont.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style/title_block.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style/application.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='style/about.css') }}">
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>{{ header }}</title>
+</head>
+<body>
+
+
+	<div class="header">
+		<ul>
+			<li><a href="tel:+79967308038">Номер телефона</a></li>
+			<li><a href="mailto:maksimnegulyaev@gmail.com">Email</a></li>
+		</ul>
+	</div>
+
+
+	<div class="title_block">
+		<h1>{{ header }}</h1>
+		<h2>{{ subtitle }}</h2>
+		<a href="tel:+79967308038">Получить консультацию</a>
+	</div>
+
+	
+	<div class="cont">
+		{% for el in articles %}
+		<div class="services_block">
+			<div class="services_title">Услуга</div>
+			<div class="services_descript">{{ el.text }}</div>
+			<a href="#subm" class="contact_button">Кнопка для связи</a>
+		</div>
+		{% endfor %}
+
+	</div>
+
+	<div class="about">
+		<h1>О нас</h1>
+		<h2>{{ about }}</h2>
+	</div>
+
+	<h1 class="app_title">Заказать машину, или рассчитать стоимость и сроки перевозки! </h1>
+	<div class="application">
+		<form action="">
+			<label for="">Имя:</label>
+			<input type="text" name="" id="" placeholder="Введите Имя" required>
+			<label for="">Номер телефона:</label>
+			<input type="text" name="" id="" placeholder="Введите номер телефона" required">
+			<label for="">Электронная почта</label>
+			<input type="email" name="" id="" placeholder="Введите адрес эл. почты" required>
+			<input class="input_but" type="submit" name="" id="subm">
+		</form>
+	</div>
+<br>
+	<div class="footer">
+        <h4>Название организации: {{ header }} </h4>
+        <h4>ИНН: {{ inn }}</h4>
+        <h4>КПП: {{ kpp }}</h4>
+        <h4>ОГРН: {{ ogrn }}</h4>
+        <h4>БИК: {{ bik }}</h4>
+        <h4>КС: {{ ks }}</h4>
+        <h4>РС: {{ pc }}</h4>
+        <h4>Адрес: {{ address }}</h4>
+	</div>
+
+</body>
+</html>

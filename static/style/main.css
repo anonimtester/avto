@@ -1,0 +1,30 @@
+body {
+	background-image: url('../img/3.jpg');
+	background-size: cover; 
+	background-attachment: fixed; 
+	background-repeat: no-repeat; 
+	background-position: center;
+
+	user-select: none;
+  }
+
+body {
+	scrollbar-width: none; /* Для Firefox */
+	-ms-overflow-style: none; /* Для Internet Explorer и Edge */
+}
+  
+  /* Затем стилизуем скроллбар по вашему вкусу */
+body::-webkit-scrollbar {
+	width: 0; /* Для Chrome, Safari, и Opera */
+}
+  
+  /* Добавляем свои стили скроллбара */
+body::-webkit-scrollbar {
+	width: 1px; /* Ширина скроллбара */
+	background-color: #f1f1f1; /* Цвет фона скроллбара */
+}
+
+
+.footer{
+	color: wheat;
+}
